@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+
+    <!-- Aqui se supone que el icono de la plataforma que vamos hacer -->
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Librería de Animacion de Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>VALHALLA</title>
+
+</head>
+
+<body>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class='bx bxl-vuejs'></i> Valhalla
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">Notas</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">calendario</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">Gestión de Clases</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">Unirme</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class='bx bx-search-alt'></i>
+
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Buscador -->
+    <div class="cart" id="cart">
+        <i class='bx bx-x cart__close' id="cart-close"></i>
+
+        <h2 class="cart__title-center">¡Hola, Bienvenido!</h2>
+
+        <!-- Scripts query de búsqueda -->
+        <script src="./assets/js/jquery.js"></script>
+        <script src="./assets/js/jquery.dataTables.min.js"></script>
+        <!-- Scripts query de búsqueda -->
+
+        <section class="btn-buscar" id="icon-menu">
+            <form autocomplete="off">
+                <div>
+                    <input type="text" name="q" id="input-search" placeholder="¿Qué deseas buscar?">
+                </div>
+                <ul class="list"></ul>
+            </form>
+        </section>
+
+
+        <!-- Filtro de Búsqueda -->
+        <div class="content-search">
+            <div class="content-table">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><a href="#">Lorem, ipsum.</a></td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="#">Lorem, ipsum.</a></td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="#">Lorem, ipsum.</a></td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="#">Lorem, ipsum.</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="#">Lorem, ipsum.</a></td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+
+            <script src="./assets/js/search-new.js"></script>
+
+        </div>
+        <!-- filtro de búsqueda -->
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/Fundadores/" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Lorem, ipsum.</h3>
+                    <span class="cart__price">Lorem, ipsum dolor.</span>
+
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/Fundadores/navas.jpg" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Lorem, ipsum.</h3>
+                    <span class="cart__price">Lorem, ipsum dolor.</span>
+
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/Fundadores/testimonial-2.jpg" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Lorem, ipsum.</h3>
+                    <span class="cart__price">Lorem, ipsum dolor.</span>
+
+                </div>
+
+            </article>
+
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/testimonial23.jpg" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Lorem, ipsum.</h3>
+                    <span class="cart__price">Lorem, ipsum dolor.</span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item">Novedades</span>
+            <span class="cart__prices-total">2022</span>
+        </div>
+
+
+    </div>
+    <!-- Buscador -->
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+
+        <!--==================== HOME ====================-->
+
+        <!-- Aqui empiezan las pulicaciones -->
+
+
+        <!--==================== HOME ====================-->
+
+        <!--==================== NEWSLETTER ====================-->
+        <section class="newsletter section container">
+
+            <div>
+                <h2 class="newsletter__title">Subscribe Our <br> Newsletter</h2>
+                <p class="newsletter__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint obcaecati fugiat rerum.
+                </p>
+            </div>
+
+            <div class="newsletter__bg grid">
+                <div>
+                    <h2 class="newsletter__title">Subscribe Our <br> Newsletter</h2>
+                    <p class="newsletter__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint obcaecati fugiat rerum.
+                    </p>
+                </div>
+
+                <form action="" class="newsletter__subscribe">
+                    <input type="email" placeholder="Enter your email" class="newsletter__input">
+                    <button class="button">
+                            SUBSCRIBE
+                        </button>
+                </form>
+            </div>
+
+            <!-- Esta seccion solo era para ver el Scroll cuando se baja (pueden borrarla) -->
+            <div class="parrafo section">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero a quaerat culpa sequi dolorum, aut exercitationem tempore sapiente, perspiciatis sunt at optio aperiam explicabo vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, voluptatem?
+                Laboriosam qui sequi dolorum, earum neque illo labore repellendus quos dolor dolores. Ab temporibus aperiam quibusdam dolor, incidunt modi necessitatibus consequuntur velit aliquam eaque odio cumque, est nesciunt ratione eum facere commodi.
+                Doloribus, enim laboriosam minus rerum est magni distinctio quam fugiat ut totam eligendi omnis deserunt. Eius vero amet voluptates aspernatur magnam aperiam rerum accusamus reiciendis quidem. Dolore alias culpa, voluptate vel possimus
+                dignissimos veritatis non quam error commodi.
+                <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima sunt aliquid rem minus, praesentium quisquam. Temporibus, incidunt. Iure praesentium expedita officiis impedit maiores illum? In, dolores! Dolorum itaque neque repudiandae
+                et sequi rem laborum fuga cum expedita iure quo alias, ut odit eius necessitatibus debitis illo suscipit odio aliquid nulla nesciunt dignissimos beatae? Quis eligendi inventore ea eum odit maxime facilis neque? Architecto quod ratione
+                repellendus esse quam, odio ad numquam saepe illum officiis illo laudantium laboriosam fugiat, quos iste perferendis, ut repellat quasi nihil! Quod expedita veritatis esse. Dolorum repellendus pariatur repellat quidem voluptatibus ea reprehenderit
+                velit tempora? Molestiae molestias accusantium culpa. Sunt magnam quibusdam non natus recusandae sapiente beatae rerum incidunt amet asperiores cupiditate explicabo quam facere minus doloribus, vero earum cum voluptas maiores mollitia
+                eius enim? Et laborum eum facere porro sapiente perspiciatis? In praesentium, ipsam ipsum labore distinctio placeat inventore consequatur, repellendus, aliquid a harum iure!
+            </div>
+
+        </section>
+        <!--==================== NEWSLETTER ====================-->
+
+    </main>
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
